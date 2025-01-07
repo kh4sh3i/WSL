@@ -108,6 +108,13 @@ wsl --list --verbose
 * You need advanced Linux kernel-level features or run distributions not supported by WSL.
 
 
+## Tips
+* do not use wsl in vmware, because some service like snap,... not working truely.
+* If nested virtualization is not supported in your VMware setup and these steps don’t resolve the issue, consider:
+  * Running WSL directly on a physical Windows machine instead of inside VMware.
+  * Using a full Linux VM in VMware instead of WSL for tasks requiring snapd.
+
+
 ## refrences
 * [wsl microsoft](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 
