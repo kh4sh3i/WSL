@@ -12,11 +12,11 @@
 # WSL
 WSL (Windows Subsystem for Linux) allows developers to run a Linux environment directly on Windows without the need for a virtual machine or dual boot setup. It enables running Linux tools, utilities, and applications alongside Windows applications.
 
-Key Features of WSL:
-Run Linux distributions like Ubuntu, Debian, Kali Linux, and others.
-Access Linux command-line tools like bash, ssh, grep, and awk directly on Windows.
-Share files between Linux and Windows seamlessly.
-Install software using Linux package managers like apt or yum.
+## Key Features of WSL:
+* Run Linux distributions like Ubuntu, Debian, Kali Linux, and others.
+* Access Linux command-line tools like bash, ssh, grep, and awk directly on Windows.
+* Share files between Linux and Windows seamlessly.
+* Install software using Linux package managers like apt or yum.
 
 
 
