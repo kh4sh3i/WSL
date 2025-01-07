@@ -21,7 +21,7 @@ WSL (Windows Subsystem for Linux) allows developers to run a Linux environment d
 
 
 # Steps to Install WSL:
-### 1. Enable WSL on Windows:
+## 1. Enable WSL on Windows:
 
 * Open PowerShell as Administrator.
 * Run the command:
@@ -71,10 +71,10 @@ wsl --set-default-version 2
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
 ```
 
-## export & import WSL
+# export & import WSL
 
 
-Step 1: Export WSL Instance from the Old System
+## Step 1: Export WSL Instance from the Old System
 ```
 wsl --list --verbose
 wsl --export <DistributionName> <PathToSave>\<FileName>.tar
@@ -82,7 +82,7 @@ wsl --export Ubuntu-20.04 D:\Backup\Ubuntu-20.04.tar
 ```
 
 
-Step 2: Enable WSL on the New System
+## Step 2: Enable WSL on the New System
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -90,12 +90,23 @@ install wsl_update_x64.msi
 ```
 
 
-Step 3: Import WSL Instance on the New System
+## Step 3: Import WSL Instance on the New System
 ```
 wsl --import <DistributionName> <InstallLocation> <PathToTarFile>
 wsl --import Ubuntu-20.04 D:\WSL\Ubuntu-20.04 D:\Backup\Ubuntu-20.04.tar
 wsl --list --verbose
 ```
+
+# WSL VS Wmware
+## When to Use WSL:
+* You need Linux for development tasks (e.g., running scripts, using tools like git, docker, or ssh).
+* You prefer minimal setup and a lightweight solution.
+* You want tight integration with Windows and don’t need a full Linux desktop environment.
+## When to Use VMware:
+* You need a complete Linux desktop environment with GUI applications.
+* You require full isolation for testing, development, or security purposes.
+* You need advanced Linux kernel-level features or run distributions not supported by WSL.
+
 
 ## refrences
 * [wsl microsoft](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
