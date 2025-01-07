@@ -21,7 +21,7 @@ WSL (Windows Subsystem for Linux) allows developers to run a Linux environment d
 
 
 # Steps to Install WSL:
-1. Enable WSL on Windows:
+### 1. Enable WSL on Windows:
 
 * Open PowerShell as Administrator.
 * Run the command:
@@ -33,13 +33,13 @@ wsl --set-default-version 2
 This installs WSL 2 (the latest version) and sets it as the default version.
 
 
-2. Install a Linux Distribution:
+## 2. Install a Linux Distribution:
 
 After installation, restart your computer if prompted.
 Open the Microsoft Store, search for a Linux distribution (e.g., Ubuntu), and install it.
 Launch the distribution from the Start menu to initialize it.
 
-3. Verify Installation:
+## 3. Verify Installation:
 
 Open a terminal and run:
 ```
@@ -48,7 +48,7 @@ wsl --list --verbose
 
 This will show the installed distributions and their WSL versions.
 
-4. Update WSL (Optional):
+## 4. Update WSL (Optional):
 ```
 wsl --update
 ```
